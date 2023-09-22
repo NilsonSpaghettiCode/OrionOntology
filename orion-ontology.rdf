@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadExterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadExterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadInterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadInterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ContextoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ContextoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Datos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Datos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Diseño -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Diseño">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Documento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Documento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Facultad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Facultad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Grado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Grado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Multimedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Programa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Programa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaExterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaExterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaInterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaInterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ResultadoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Rol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Rol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Sede -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Sede"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoContextoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoContextoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoResultadoAcademico"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi -->
+
