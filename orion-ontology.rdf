@@ -13,6 +13,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#orion:tipo_rol -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#orion:tipo_rol">
+        <rdfs:comment xml:lang="es">Este es un tipo de datos que puede almacernar &quot;Interno&quot;, &quot;Externo&quot; strings</rdfs:comment>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -21,10 +41,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#apellidos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#apellidos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#descripcion -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#descripcion">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ResultadoAcademico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoResultadoAcademico"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#estado_evaluacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#estado_evaluacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -41,16 +81,52 @@
     <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_activo_academico -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_activo_academico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ids"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
         <rdfs:comment xml:lang="es">Este es el ID de un Activo Académico</rdfs:comment>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre_archivo -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_grado -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre_archivo">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_grado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ids"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Grado"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ids -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ids"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Area"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ContextoAcademico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Facultad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Grado"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Programa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Rol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Sede"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoContextoAcademico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Tipo de dato que describe el nombre que tendra una instancia de una clase</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombres -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombres">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -69,6 +145,14 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tamano_archivo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tipo_rol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tipo_rol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Rol"/>
     </owl:DatatypeProperty>
     
 
