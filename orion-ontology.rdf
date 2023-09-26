@@ -6,7 +6,70 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#descripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#extension_archivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#extension_archivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_activo_academico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#id_activo_academico">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:comment xml:lang="es">Este es el ID de un Activo Académico</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre_archivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#nombre_archivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ruta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ruta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tamano_archivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tamano_archivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -21,159 +84,285 @@
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Area -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Area -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Area"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Area"/>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Articulo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadExterna -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadExterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Articulo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadInterna -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Audio -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadInterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ComunidadAcademica"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ContextoAcademico -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Binario -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ContextoAcademico"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Datos -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Datos">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Binario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Software"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Diseño -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#CodigoFuente -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Diseño">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#CodigoFuente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Software"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Documento -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Documento">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadExterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadExterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Facultad -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadInterna -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Facultad"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Grado -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Grado"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Multimedia -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Multimedia">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadInterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Programa -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ContextoAcademico -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Programa"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ContextoAcademico"/>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Datos -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaExterna -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaExterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Datos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaInterna -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Diseno -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ReferenciaInterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Referencia"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Diseno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ResultadoAcademico -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ResultadoAcademico"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Rol -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Rol"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Sede -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Sede"/>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Software -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Software">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#ActivoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Test -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Ensayo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#Test"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Ensayo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoContextoAcademico -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Facultad -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoContextoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Facultad"/>
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoResultadoAcademico -->
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Grado -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/untitled-ontology-9#TipoResultadoAcademico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Grado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#HojaDeCalculo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#HojaDeCalculo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Datos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Imagen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Imagen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Libro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Libro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Modelos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Modelos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Diseno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Monografia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Monografia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Planos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Planos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Diseno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Presentacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Presentacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Programa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Programa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Referencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Referencia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ReferenciaExterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ReferenciaExterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ReferenciaInterna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ReferenciaInterna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ResultadoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Rol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Rol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Sede -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Sede"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Tesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Tesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Test"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoContextoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoContextoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#TipoResultadoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+        <rdfs:comment xml:lang="es">0.0.1</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
