@@ -25,6 +25,7 @@
 
     <rdfs:Datatype rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#orion:tipo_rol">
         <rdfs:comment xml:lang="es">Este es un tipo de datos que puede almacernar &quot;Interno&quot;, &quot;Externo&quot; strings</rdfs:comment>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </rdfs:Datatype>
     
@@ -153,6 +154,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#tipo_rol">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#Rol"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#orion:tipo_rol"/>
     </owl:DatatypeProperty>
     
 
