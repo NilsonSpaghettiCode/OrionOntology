@@ -32,11 +32,57 @@
     
 
 
+    <!-- http://www.engworks.tech/ontologies/orion#esContextoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esContextoDe">
+        <owl:inverseOf rdf:resource="http://www.engworks.tech/ontologies/orion#esTipoContexto"/>
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#esTipoContexto -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esTipoContexto">
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#esTipoResultado -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esTipoResultado">
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.engworks.tech/ontologies/orion#tieneActivo -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneActivo">
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#tieneContexto -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneContexto">
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#tieneGrado -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneGrado">
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Grado"/>
     </owl:ObjectProperty>
     
 
@@ -320,13 +366,17 @@
 
     <!-- http://www.engworks.tech/ontologies/orion#Programa -->
 
-    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Programa"/>
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Programa">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
     <!-- http://www.engworks.tech/ontologies/orion#Referencia -->
 
-    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Referencia"/>
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Referencia">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -395,20 +445,33 @@
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#AlemaniaNazi -->
+    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#AlemaniaNazi">
-        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#AppNazi"/>
-        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#ManifiestoNazi"/>
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico1">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Articulo"/>
+        <orion:tieneExtensionArchivo>pdf</orion:tieneExtensionArchivo>
+        <orion:tieneNombre>Manifiesto Agil</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#AppNazi -->
+    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#AppNazi">
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico2">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#CodigoFuente"/>
-        <orion:tieneExtensionArchivo>java</orion:tieneExtensionArchivo>
+        <orion:esActivoDe rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico1"/>
+        <orion:tieneExtensionArchivo>html</orion:tieneExtensionArchivo>
+        <orion:tieneNombre>Manifiesto Agil Página web</orion:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico3">
+        <orion:esActivoDe rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico2"/>
+        <orion:tieneExtensionArchivo>pdf</orion:tieneExtensionArchivo>
+        <orion:tieneNombre>Documentación orion</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
@@ -417,7 +480,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ContextoAcademico1">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
-        <orion:tieneNombre>Clase</orion:tieneNombre>
+        <owl:differentFrom rdf:resource="http://www.engworks.tech/ontologies/orion#Grado1"/>
+        <owl:differentFrom rdf:resource="http://www.engworks.tech/ontologies/orion#Persona1"/>
+        <owl:differentFrom rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico1"/>
+        <owl:differentFrom rdf:resource="http://www.engworks.tech/ontologies/orion#Sede1"/>
+        <owl:differentFrom rdf:resource="http://www.engworks.tech/ontologies/orion#TIpoContextoAcademico1"/>
+        <orion:tieneNombre>Sistemas distribuidos</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
@@ -426,7 +494,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ContextoAcademico2">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
-        <orion:tieneNombre>Semillero</orion:tieneNombre>
+        <orion:tieneNombre>Semillero Sofia</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
@@ -449,17 +517,6 @@
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#ManifiestoNazi -->
-
-    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ManifiestoNazi">
-        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Articulo"/>
-        <orion:tieneDescripcion>ManifiestoAGIL</orion:tieneDescripcion>
-        <orion:tieneExtensionArchivo>pdf</orion:tieneExtensionArchivo>
-        <orion:tieneNombre>ManifiestoAgil</orion:tieneNombre>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.engworks.tech/ontologies/orion#Persona1 -->
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Persona1">
@@ -473,9 +530,12 @@
     <!-- http://www.engworks.tech/ontologies/orion#ResultadoAcademico1 -->
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ResultadoAcademico1">
-        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+        <orion:esTipoResultado rdf:resource="http://www.engworks.tech/ontologies/orion#TIpoResultadoAcademico1"/>
+        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico1"/>
+        <orion:tieneGrado rdf:resource="http://www.engworks.tech/ontologies/orion#Grado1"/>
         <orion:tieneDescripcion>Este es el resultado despues de mil años de muerte y destruccion</orion:tieneDescripcion>
         <orion:tieneEstadoEvaluacion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</orion:tieneEstadoEvaluacion>
+        <orion:tieneNombre>Congreso Manifiesto Ágil</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
@@ -484,7 +544,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ResultadoAcademico2">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
-        <orion:tieneDescripcion>UwU</orion:tieneDescripcion>
+        <orion:esTipoResultado rdf:resource="http://www.engworks.tech/ontologies/orion#TIpoResultadoAcademico1"/>
+        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico3"/>
+        <orion:tieneContexto rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico2"/>
+        <orion:tieneGrado rdf:resource="http://www.engworks.tech/ontologies/orion#Grado1"/>
+        <orion:tieneDescripcion>Este es el resultado relacionado a Orion</orion:tieneDescripcion>
+        <orion:tieneNombre>Ontologia orion</orion:tieneNombre>
     </owl:NamedIndividual>
     
 
@@ -502,6 +567,32 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Sede2">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Sede"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TIpoContextoAcademico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#TIpoContextoAcademico1">
+        <orion:esContextoDe rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico2"/>
+        <orion:tieneNombre>Semillero</orion:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TIpoResultadoAcademico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#TIpoResultadoAcademico1">
+        <orion:tieneNombre>Libreria</orion:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TipoContextoAcademico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico2">
+        <orion:esContextoDe rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico1"/>
+        <orion:tieneNombre>Clase</orion:tieneNombre>
     </owl:NamedIndividual>
 </rdf:RDF>
 
