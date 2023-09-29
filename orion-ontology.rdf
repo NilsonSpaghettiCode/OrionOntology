@@ -220,22 +220,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadExterna -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadExterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadInterna -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadInterna">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ComunidadAcademica"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ContextoAcademico -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edwin/ontologies/2023/8/orion#ContextoAcademico"/>
