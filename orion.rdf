@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/edwin/ontologies/orion/"
+     xml:base="http://www.semanticweb.org/edwin/ontologies/orion/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:orion="http://www.engworks.tech/ontologies/orion#">
+    <owl:Ontology rdf:about="http://www.engworks.tech/ontologies/orion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#tieneExtensionArchivo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneExtensionArchivo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Area -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Area"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Articulo -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Articulo">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Audio -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Binario -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Binario">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#CodigoFuente -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#CodigoFuente">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ComunidadAcademica -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ContextoAcademico -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Datos -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Datos">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Diseno -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Diseno">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Documento -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Documento">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Ensayo -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Ensayo">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Facultad -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Facultad"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Grado -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Grado"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#HojaDeCalculo -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#HojaDeCalculo">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Datos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Imagen -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Imagen">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Libro -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Libro">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Modelo -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Modelo">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Diseno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Monografia -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Monografia">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Multimedia -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Multimedia">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Plano -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Plano">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Diseno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Presentacion -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Presentacion">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Programa -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Programa"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Referencia -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Referencia"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ReferenciaExterna -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ReferenciaExterna">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ReferenciaInterna -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ReferenciaInterna">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Referencia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Rol -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Rol"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Sede -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Sede"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Software -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Software">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Tesis -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Tesis">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Documento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TipoContextoAcademico -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Video -->
+
+    <owl:Class rdf:about="http://www.engworks.tech/ontologies/orion#Video">
+        <rdfs:subClassOf rdf:resource="http://www.engworks.tech/ontologies/orion#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#AppNazi -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#AppNazi">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#CodigoFuente"/>
+        <orion:tieneExtensionArchivo>java</orion:tieneExtensionArchivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#ManifiestoNazi -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ManifiestoNazi">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Articulo"/>
+        <orion:tieneExtensionArchivo>pdf</orion:tieneExtensionArchivo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
