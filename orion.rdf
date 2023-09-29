@@ -14,6 +14,36 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#esActivoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esActivoDe">
+        <owl:inverseOf rdf:resource="http://www.engworks.tech/ontologies/orion#tieneActivo"/>
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#tieneActivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneActivo">
+        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
+        <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -297,6 +327,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#AlemaniaNazi -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#AlemaniaNazi">
+        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#AppNazi"/>
+        <orion:tieneActivo rdf:resource="http://www.engworks.tech/ontologies/orion#ManifiestoNazi"/>
+    </owl:NamedIndividual>
     
 
 
