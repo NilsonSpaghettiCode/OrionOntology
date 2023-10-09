@@ -25,7 +25,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#esActivoDe -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esActivoDe">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rActivoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objActivoAcademico"/>
         <owl:inverseOf rdf:resource="http://www.engworks.tech/ontologies/orion#tieneActivo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
@@ -37,7 +37,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#esContextoDe -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esContextoDe">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rTipoContextoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objTipoContextoAcademico"/>
         <owl:inverseOf rdf:resource="http://www.engworks.tech/ontologies/orion#tieneTipoContexto"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
@@ -48,7 +48,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#esReferenciaDe -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esReferenciaDe">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rReferencia"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objReferencia"/>
         <owl:inverseOf rdf:resource="http://www.engworks.tech/ontologies/orion#tieneReferencia"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#Referencia"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
@@ -59,59 +59,59 @@
     <!-- http://www.engworks.tech/ontologies/orion#esTipoResultado -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#esTipoResultado">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rActivoAcademico -->
+    <!-- http://www.engworks.tech/ontologies/orion#objActivoAcademico -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rActivoAcademico"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objActivoAcademico"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rComunidadAcademica -->
+    <!-- http://www.engworks.tech/ontologies/orion#objComunidadAcademica -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rComunidadAcademica"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objComunidadAcademica"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rContextoAcademico -->
+    <!-- http://www.engworks.tech/ontologies/orion#objContextoAcademico -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rContextoAcademico"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objContextoAcademico"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rReferencia -->
+    <!-- http://www.engworks.tech/ontologies/orion#objReferencia -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rReferencia"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objReferencia"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rResultadoAcademico -->
+    <!-- http://www.engworks.tech/ontologies/orion#objResultadoAcademico -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rTipoContextoAcademico -->
+    <!-- http://www.engworks.tech/ontologies/orion#objTipoContextoAcademico -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rTipoContextoAcademico"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objTipoContextoAcademico"/>
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#rTipoResultadoAcademico -->
+    <!-- http://www.engworks.tech/ontologies/orion#objTipoResultadoAcademico -->
 
-    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#rTipoResultadoAcademico"/>
+    <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#objTipoResultadoAcademico"/>
     
 
 
     <!-- http://www.engworks.tech/ontologies/orion#tieneActivo -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneActivo">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
     </owl:ObjectProperty>
@@ -121,7 +121,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneArea -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneArea">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rTipoResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objTipoResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Area"/>
     </owl:ObjectProperty>
@@ -131,7 +131,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneAutor -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneAutor">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
         <owl:propertyDisjointWith rdf:resource="http://www.engworks.tech/ontologies/orion#tieneEvaluador"/>
@@ -142,7 +142,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneContexto -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneContexto">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
     </owl:ObjectProperty>
@@ -152,7 +152,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneEvaluador -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneEvaluador">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
     </owl:ObjectProperty>
@@ -162,7 +162,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneFacultad -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneFacultad">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rComunidadAcademica"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objComunidadAcademica"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Facultad"/>
@@ -173,7 +173,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneGrado -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneGrado">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Grado"/>
     </owl:ObjectProperty>
@@ -183,7 +183,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tienePrograma -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tienePrograma">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rComunidadAcademica"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objComunidadAcademica"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Programa"/>
@@ -194,7 +194,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneReferencia -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneReferencia">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rResultadoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objResultadoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Referencia"/>
     </owl:ObjectProperty>
@@ -204,7 +204,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneReferenciasInternas -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneReferenciasInternas">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rReferencia"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objReferencia"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#Referencia"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ResultadoAcademico"/>
     </owl:ObjectProperty>
@@ -214,7 +214,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneResponsable -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneResponsable">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rContextoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objContextoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
     </owl:ObjectProperty>
@@ -224,7 +224,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneSede -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneSede">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rComunidadAcademica"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objComunidadAcademica"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ComunidadAcademica"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#Sede"/>
@@ -235,7 +235,7 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneTipoContexto -->
 
     <owl:ObjectProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneTipoContexto">
-        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#rContextoAcademico"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.engworks.tech/ontologies/orion#objContextoAcademico"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ContextoAcademico"/>
         <rdfs:range rdf:resource="http://www.engworks.tech/ontologies/orion#TipoContextoAcademico"/>
     </owl:ObjectProperty>
