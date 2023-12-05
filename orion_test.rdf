@@ -337,16 +337,6 @@
     
 
 
-    <!-- http://www.engworks.tech/ontologies/orion#tieneKeyStream -->
-
-    <owl:DatatypeProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneKeyStream">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.engworks.tech/ontologies/orion#tieneNombre -->
 
     <owl:DatatypeProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneNombre">
@@ -379,16 +369,6 @@
     <!-- http://www.engworks.tech/ontologies/orion#tieneRuta -->
 
     <owl:DatatypeProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneRuta">
-        <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.engworks.tech/ontologies/orion#tieneStream -->
-
-    <owl:DatatypeProperty rdf:about="http://www.engworks.tech/ontologies/orion#tieneStream">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -844,6 +824,35 @@
     
 
 
+    <!-- http://www.engworks.tech/ontologies/orion#Empresa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Empresa1">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Empresa"/>
+        <orion:tienePrograma rdf:resource="http://www.engworks.tech/ontologies/orion#IngenieriaSistemas"/>
+        <orion:tieneRol rdf:resource="http://www.engworks.tech/ontologies/orion#Interno"/>
+        <orion:tieneNombre>UwU S.A.S</orion:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Estudiante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Estudiante1">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Estudiante"/>
+        <orion:tieneNombres>Nilson Vargas</orion:tieneNombres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#Estudiante2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Estudiante2">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Estudiante"/>
+        <orion:tieneNombres>Edwin Becerra</orion:tieneNombres>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.engworks.tech/ontologies/orion#Externo -->
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Externo">
@@ -872,6 +881,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Grado2">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Grado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#IngenieriaSistemas -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#IngenieriaSistemas">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Programa"/>
     </owl:NamedIndividual>
     
 
