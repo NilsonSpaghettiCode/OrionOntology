@@ -732,6 +732,16 @@
     
 
 
+    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
+        <tieneTamano rdf:resource="http://www.engworks.tech/ontologies/orion#TamanoActivo1"/>
+        <tieneExtensionArchivo>pdf</tieneExtensionArchivo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico1 -->
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico1">
@@ -784,16 +794,6 @@
     <owl:Thing rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico6">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     </owl:Thing>
-    
-
-
-    <!-- http://www.engworks.tech/ontologies/orion#ActivoAcademico7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#ActivoAcademico7">
-        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#ActivoAcademico"/>
-        <tieneTamano rdf:resource="http://www.engworks.tech/ontologies/orion#TamanoActivo1"/>
-        <tieneExtensionArchivo>pdf</tieneExtensionArchivo>
-    </owl:NamedIndividual>
     
 
 
