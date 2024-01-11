@@ -801,15 +801,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Area1">
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Area"/>
+        <tieneNombre>Ciencias de la computación</tieneNombre>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.engworks.tech/ontologies/orion#Area2 -->
 
-    <owl:Thing rdf:about="http://www.engworks.tech/ontologies/orion#Area2">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    </owl:Thing>
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#Area2">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#Area"/>
+        <tieneDescripcion>Engloba disciplinas como literatura, filosofía, historia, lingüística, y otras áreas centradas en el estudio de la cultura y la expresión humana.</tieneDescripcion>
+        <tieneNombre>Humanidades</tieneNombre>
+    </owl:NamedIndividual>
     
 
 
@@ -1071,6 +1074,18 @@
         <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
         <tieneArea rdf:resource="http://www.engworks.tech/ontologies/orion#Area1"/>
         <tieneDescripcion>Software como complemento para la construcción de piezas de un alto nivel de abstracción</tieneDescripcion>
+        <tieneNombre>Libreria</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico2">
+        <rdf:type rdf:resource="http://www.engworks.tech/ontologies/orion#TipoResultadoAcademico"/>
+        <tieneArea rdf:resource="http://www.engworks.tech/ontologies/orion#Area2"/>
+        <tieneDescripcion>Proceso sistemático y organizado de búsqueda, recopilación, análisis y evaluación de información con el objetivo de obtener nuevos conocimientos, comprender fenómenos, verificar hipótesis o resolver problemas específicos. La investigación puede llevarse a cabo en una variedad de campos, como la ciencia, la tecnología, las ciencias sociales, la medicina, entre otros.</tieneDescripcion>
+        <tieneNombre>Investigación</tieneNombre>
     </owl:NamedIndividual>
 </rdf:RDF>
 
